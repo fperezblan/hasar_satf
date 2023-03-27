@@ -1,0 +1,16 @@
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\bin\Release\HASAR_SATF.exe.config
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\bin\Release\HASAR_SATF.exe
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\bin\Release\HASAR_SATF.pdb
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.csproj.AssemblyReference.cache
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.csproj.SuggestedBindingRedirects.cache
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\MainWindow.g.cs
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\App.g.cs
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF_MarkupCompile.cache
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF_MarkupCompile.lref
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\MainWindow.baml
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.g.resources
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.Properties.Resources.resources
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.csproj.GenerateResource.cache
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.csproj.CoreCompileInputs.cache
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.exe
+C:\Users\Francisco\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.pdb
