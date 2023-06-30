@@ -19,11 +19,11 @@ namespace HASAR_SATF
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Main : Window
     {
         HasarArgentina.ImpresoraFiscalRG3561 imp = new HasarArgentina.ImpresoraFiscalRG3561();
 
-        public MainWindow()
+        public Main()
         {
             InitializeComponent();
         }

@@ -1,0 +1,46 @@
+﻿<Window x:Class="HASAR_SATF.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HASAR_SATF"
+        mc:Ignorable="d"
+        Title="HASAR SATF" Height="480" Width="830" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="293*"/>
+            <ColumnDefinition Width="107*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl x:Name="tabControl" Grid.ColumnSpan="2" Background="#FF222222">
+            <TabItem Header="Información Fiscal" Background="#FF222222" Foreground="#FFC1C1C1" BorderBrush="White">
+                <Grid Background="#FF222222">
+                    <TextBox x:Name="tb_IP" HorizontalAlignment="Left" Margin="36,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="230" Height="40" FontSize="30" Foreground="White" Background="#FF222222" BorderBrush="White"/>
+                    <TextBox x:Name="tb_Puerto" HorizontalAlignment="Left" Margin="36,110,0,0" TextWrapping="Wrap" Text="80" VerticalAlignment="Top" Width="230" Height="40" FontSize="30" Foreground="White" Background="#FF222222" BorderBrush="White"/>
+                    <Button x:Name="btn_Conectar" Content="Probar conexión" HorizontalAlignment="Left" Margin="36,178,0,0" VerticalAlignment="Top" Width="230" Height="40" Click="btn_Conectar_Click" Background="#FF222222" BorderBrush="#FF486581" Foreground="White"/>
+                    <Label x:Name="label" Content="IP Controlador" HorizontalAlignment="Left" Margin="36,8,0,0" VerticalAlignment="Top" Foreground="White"/>
+                    <Label x:Name="label_Copy" Content="Puerto" HorizontalAlignment="Left" Margin="36,84,0,0" VerticalAlignment="Top" Foreground="White"/>
+                    <Label x:Name="label1" Content="Último comprobante emitido: " HorizontalAlignment="Left" Margin="395,160,0,0" VerticalAlignment="Top" Foreground="White"/>
+                    <Label x:Name="label2" Content="Número de Punto de Venta: " HorizontalAlignment="Left" Margin="395,44,0,0" VerticalAlignment="Top" Foreground="White"/>
+                    <Label x:Name="lbl_ultimocbte" Content="" HorizontalAlignment="Left" Margin="592,160,0,0" VerticalAlignment="Top"  Foreground="White"/>
+                    <Label x:Name="lbl_numeropuntodeventa" Content="" HorizontalAlignment="Left" Margin="592,44,0,0" VerticalAlignment="Top" Foreground="White"/>
+                    <Label x:Name="label3" Content="Razón social: " HorizontalAlignment="Left" Margin="394,84,0,0" VerticalAlignment="Top" Foreground="White"/>
+                    <Label x:Name="lbl_razonsocial" Content="" HorizontalAlignment="Left" Margin="592,84,0,0" VerticalAlignment="Top" Foreground="White"/>
+                    <Label x:Name="label4" Content="Responsabilidad ante el IVA: " HorizontalAlignment="Left" Margin="395,124,0,0" VerticalAlignment="Top" Foreground="White"/>
+                    <Label x:Name="lbl_responsabilidadanteeliva" Content="" HorizontalAlignment="Left" Margin="592,124,0,0" VerticalAlignment="Top" Foreground="White"/>
+                    <Rectangle HorizontalAlignment="Left" Height="164" Margin="380,34,0,0" Stroke="White" VerticalAlignment="Top" Width="404"/>
+                    <Label x:Name="label_Copy1" Content="Datos fiscales" HorizontalAlignment="Left" Margin="380,8,0,0" VerticalAlignment="Top" Foreground="White"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Pruebas" Background="#FF222222" Foreground="White" BorderBrush="White">
+                <Grid Background="#FF222222">
+                    <Button x:Name="btn_CierreZ" Content="Cierre Z" HorizontalAlignment="Left" Margin="25,16,0,0" VerticalAlignment="Top" Height="60" Width="123" Click="btn_CierreZ_Click" Background="#FF222222" BorderBrush="#FF486581" Foreground="White"/>
+                    <Button x:Name="btn_CierreX" Content="Cierre X" HorizontalAlignment="Left" Margin="25,81,0,0" VerticalAlignment="Top" Height="60" Width="123" Click="btn_CierreX_Click" Background="#FF222222" Foreground="White" BorderBrush="#FF486581"/>
+                    <Button x:Name="btn_PruebaFTA" Content="Factura A" HorizontalAlignment="Left" Margin="25,151,0,0" VerticalAlignment="Top" Height="60" Width="123" Click="btn_PruebaFTA_Click" Background="#FF222222" BorderBrush="#FF486581" Foreground="White"/>
+                    <Button x:Name="btn_PruebaFTB" Content="Factura B" HorizontalAlignment="Left" Margin="25,216,0,0" VerticalAlignment="Top" Height="60" Width="123" Click="btn_PruebaFTB_Click" Background="#FF222222" Foreground="White" BorderBrush="#FF486581"/>
+                    <Button x:Name="btn_PruebaDNFH" Content="DNFH" HorizontalAlignment="Left" Margin="25,281,0,0" VerticalAlignment="Top" Height="60" Width="123" Click="btn_PruebaDNFH_Click" IsEnabled="False" Background="#FF7E7E7E"/>
+                    <Button x:Name="btn_CancelarDocumentoActual" Content="Cancelar documento" HorizontalAlignment="Left" Margin="25,346,0,0" VerticalAlignment="Top" Height="60" Width="123" Click="btn_CancelarDocumentoActual_Click" Background="#FF222222" BorderBrush="Red" Foreground="White"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
