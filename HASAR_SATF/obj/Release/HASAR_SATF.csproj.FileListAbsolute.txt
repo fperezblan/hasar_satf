@@ -18,7 +18,6 @@ C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\bin\Release\HASAR_SATF.e
 C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\bin\Release\HASAR_SATF.exe
 C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\bin\Release\HASAR_SATF.pdb
 C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.csproj.AssemblyReference.cache
-C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.csproj.SuggestedBindingRedirects.cache
 C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\Interop.HasarArgentina.dll
 C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.csproj.ResolveComReference.cache
 C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\App.g.cs
@@ -32,3 +31,4 @@ C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.e
 C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.pdb
 C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\Main.g.cs
 C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\Main.baml
+C:\Users\Francis\Documents\GitHub\hasar_satf\HASAR_SATF\obj\Release\HASAR_SATF.exe.config

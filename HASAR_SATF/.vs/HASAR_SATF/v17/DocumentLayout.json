@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E38238D-0E53-4C89-B962-B8C2B4E24746}|HASAR_SATF.csproj|c:\\users\\francis\\documents\\github\\hasar_satf\\hasar_satf\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E38238D-0E53-4C89-B962-B8C2B4E24746}|HASAR_SATF.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|HASAR_SATF||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E38238D-0E53-4C89-B962-B8C2B4E24746}|HASAR_SATF.csproj|c:\\users\\francis\\documents\\github\\hasar_satf\\hasar_satf\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7E38238D-0E53-4C89-B962-B8C2B4E24746}|HASAR_SATF.csproj|solutionrelative:main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E38238D-0E53-4C89-B962-B8C2B4E24746}|HASAR_SATF.csproj|C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{7E38238D-0E53-4C89-B962-B8C2B4E24746}|HASAR_SATF.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E38238D-0E53-4C89-B962-B8C2B4E24746}|HASAR_SATF.csproj|C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7E38238D-0E53-4C89-B962-B8C2B4E24746}|HASAR_SATF.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E38238D-0E53-4C89-B962-B8C2B4E24746}|HASAR_SATF.csproj|c:\\users\\francis\\documents\\github\\hasar_satf\\hasar_satf\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HASAR_SATF",
+              "DocumentMoniker": "C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\HASAR_SATF.csproj",
+              "RelativeDocumentMoniker": "HASAR_SATF.csproj",
+              "ToolTip": "C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\HASAR_SATF.csproj",
+              "RelativeToolTip": "HASAR_SATF.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-21T18:33:14.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowEsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T17:09:11.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main.xaml",
+              "DocumentMoniker": "C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\Main.xaml",
+              "RelativeDocumentMoniker": "Main.xaml",
+              "ToolTip": "C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\Main.xaml",
+              "RelativeToolTip": "Main.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-06-30T16:53:27.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2023-06-30T16:48:19.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\Francis\\Documents\\GitHub\\hasar_satf\\HASAR_SATF\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2023-04-15T03:12:28.715Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

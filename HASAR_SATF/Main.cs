@@ -33,19 +33,45 @@ namespace HASAR_SATF
             try
             {
                 imp.Conectar(tb_IP.Text, Convert.ToInt32(tb_Puerto.Text));
-                MessageBox.Show("Conexion exitosa");
+                ObtenerEstado();
+                btn_Actualizar.IsEnabled = true;
+                btn_Conectar.Content = "Conectar nuevamente";
+            }
+            catch (Exception ex){ 
+                MessageBox.Show("Hubo un error: " + ex.Message);
+                btn_Conectar.Content = "Conectar";
+                btn_Actualizar.IsEnabled = false;
 
+                lbl_numeropuntodeventa.Content = $"Número de Punto de Venta: ";
+                lbl_razonsocial.Content = $"Razón social: ";
+                lbl_responsabilidadanteeliva.Content = $"Responsabilidad ante el IVA: ";
+                lbl_Cuit.Content = $"CUIT: ";
+                lbl_IngresosBrutos.Content = $"Ingresos Brutos: ";
+                lbl_InicioActividades.Content = $"Fecha de inicio actividades: ";
+
+                lbl_ultimocbte.Content = $"Último comprobante emitido: ";
+                lbl_estadoFiscal.Content = $"Estado fiscal: ";
+            }
+        }
+        private void ObtenerEstado()
+        {
+            try
+            {
                 HasarArgentina.RespuestaConsultarDatosInicializacion datos = imp.ConsultarDatosInicializacion();
                 HasarArgentina.RespuestaConsultarEstado estado = imp.ConsultarEstado();
 
-                
-                lbl_numeropuntodeventa.Content = datos.NumeroPos.ToString();
-                lbl_razonsocial.Content= datos.RazonSocial.ToString();
-                lbl_responsabilidadanteeliva.Content = datos.ResponsabilidadIVA.ToString();
+                lbl_numeropuntodeventa.Content = $"Número de Punto de Venta: {datos.NumeroPos.ToString()}";
+                lbl_razonsocial.Content = $"Razón social: {datos.RazonSocial.ToString()}";
+                lbl_responsabilidadanteeliva.Content = $"Responsabilidad ante el IVA: {datos.ResponsabilidadIVA.ToString()}";
+                lbl_Cuit.Content = $"CUIT: {datos.Cuit.ToString()}";
+                lbl_IngresosBrutos.Content = $"Ingresos Brutos: {datos.IngBrutos.ToString()}";
+                lbl_InicioActividades.Content = $"Fecha de inicio actividades: {datos.FechaInicioActividades.ToString()}";
 
-                lbl_ultimocbte.Content = estado.NumeroUltimoComprobante.ToString();
+                lbl_ultimocbte.Content = $"Último comprobante emitido: {estado.CodigoComprobante.ToString()} - {estado.NumeroUltimoComprobante.ToString()}";
+                lbl_estadoFiscal.Content = $"Estado fiscal: {estado.EstadoInterno.ToString()}";
             }
-            catch (Exception ex){ 
+            catch (Exception ex)
+            {
                 MessageBox.Show("Hubo un error: " + ex.Message);
             }
         }
@@ -60,6 +86,7 @@ namespace HASAR_SATF
             catch (Exception ex)
             {
                 MessageBox.Show("Hubo un error: " + ex.Message);
+                return;
             }
         }
 
@@ -73,6 +100,7 @@ namespace HASAR_SATF
             catch (Exception ex)
             {
                 MessageBox.Show("Hubo un error: " + ex.Message);
+                return;
             }
         }
 
@@ -98,7 +126,9 @@ namespace HASAR_SATF
             catch (Exception ex)
             {
                 MessageBox.Show("Hubo un error: " + ex.Message);
+                return;
             }
+            MessageBox.Show("Se emitió comprobante A de prueba correctamente.");
         }
 
         private void btn_PruebaFTB_Click(object sender, RoutedEventArgs e)
@@ -122,7 +152,9 @@ namespace HASAR_SATF
             catch (Exception ex)
             {
                 MessageBox.Show("Hubo un error: " + ex.Message);
+                return;
             }
+            MessageBox.Show("Se emitió comprobante B de prueba correctamente.");
         }
 
         private void btn_PruebaDNFH_Click(object sender, RoutedEventArgs e)
@@ -133,7 +165,9 @@ namespace HASAR_SATF
             catch (Exception ex)
             {
                 MessageBox.Show("Hubo un error: " + ex.Message);
+                return;
             }
+            MessageBox.Show("Se emitió comprobante genérico de prueba correctamente.");
         }
 
         private void btn_CancelarDocumentoActual_Click(object sender, RoutedEventArgs e)
@@ -145,7 +179,14 @@ namespace HASAR_SATF
             catch (Exception ex)
             {
                 MessageBox.Show("Hubo un error: " + ex.Message);
+                return;
             }
+            MessageBox.Show("Se se canceló comprobante en curso.");
+        }
+
+        private void btn_Actualizar_Click(object sender, RoutedEventArgs e)
+        {
+            ObtenerEstado();
         }
     }
 }
