@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using HASAR_SATF.Services;
 using HasarArgentina;
 
 namespace HASAR_SATF
@@ -26,6 +28,7 @@ namespace HASAR_SATF
         public Main()
         {
             InitializeComponent();
+            FillComboBoxes();
         }
 
         private void btn_Conectar_Click(object sender, RoutedEventArgs e)
@@ -76,6 +79,48 @@ namespace HASAR_SATF
             }
         }
 
+        private void FillComboBoxes()
+        {
+            cbTipoDocumento.ItemsSource = Enum.GetValues(typeof(TiposComprobante));
+        }
+
+        private void DescargarDocumento() 
+        {
+            if(tbComprobanteDesde.Text.Equals(string.Empty) || tbComprobanteHasta.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("Se debe ingresar comprobante desde y comprobante hasta. En caso de necesitar un solo comprobante colocar el mismo en ambos campos.");
+                return;
+            }
+            if (cbTipoDocumento.SelectedIndex == -1)
+            {
+                MessageBox.Show("Se debe seleccionar tipo de comprobante.");
+                return;
+            }
+            //var response = imp.ObtenerRangoFechasPorZetas(66, 66);
+            var cbteDesde = Convert.ToInt32(tbComprobanteDesde.Text);
+            var cbteHasta = Convert.ToInt32(tbComprobanteHasta.Text);
+
+            var tipoDeComprobante = cbTipoDocumento.SelectedItem as TiposComprobante?;
+
+            StringBuilder documentoCompleto = new StringBuilder();
+            try
+            {
+                documentoCompleto.Append(imp.ObtenerPrimerBloqueDocumento(cbteDesde, cbteHasta, (TiposComprobante)tipoDeComprobante, CompresionDeInformacion.NoComprime, XMLsPorBajada.XMLUnico).Informacion);
+                while (true)
+                {
+                    documentoCompleto.Append(imp.ObtenerSiguienteBloqueDocumento().Informacion);
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex.HResult == -2147221380)
+                {
+                    Export.ToFile(".xml", "XML file (.xml)|*.xml", $"Comprobante {(TiposComprobante)tipoDeComprobante} - {cbteDesde.ToString()} - {cbteHasta.ToString()}", documentoCompleto);
+                    return;
+                }
+                MessageBox.Show("Hubo un error: " + ex.Message);
+            }
+        }
         private void btn_CierreZ_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -187,6 +232,11 @@ namespace HASAR_SATF
         private void btn_Actualizar_Click(object sender, RoutedEventArgs e)
         {
             ObtenerEstado();
+        }
+
+        private void btnObtenerDocumento_Click(object sender, RoutedEventArgs e)
+        {
+            DescargarDocumento();
         }
     }
 }

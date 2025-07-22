@@ -65,13 +65,44 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Pruebas">
-                <Grid  >
-                    <Button x:Name="btn_CierreZ" Content="Cierre Z" HorizontalAlignment="Left" Margin="25,16,0,0" VerticalAlignment="Top" Height="60" Width="123" Click="btn_CierreZ_Click"/>
-                    <Button x:Name="btn_CierreX" Content="Cierre X" HorizontalAlignment="Left" Margin="25,81,0,0" VerticalAlignment="Top" Height="60" Width="123" Click="btn_CierreX_Click"/>
-                    <Button x:Name="btn_PruebaFTA" Content="Factura A" HorizontalAlignment="Left" Margin="25,151,0,0" VerticalAlignment="Top" Height="60" Width="123" Click="btn_PruebaFTA_Click"/>
-                    <Button x:Name="btn_PruebaFTB" Content="Factura B" HorizontalAlignment="Left" Margin="25,216,0,0" VerticalAlignment="Top" Height="60" Width="123" Click="btn_PruebaFTB_Click"  />
-                    <Button x:Name="btn_PruebaDNFH" Content="DNFH" HorizontalAlignment="Left" Margin="25,281,0,0" VerticalAlignment="Top" Height="60" Width="123" Click="btn_PruebaDNFH_Click" IsEnabled="False"/>
-                    <Button x:Name="btn_CancelarDocumentoActual" Content="Cancelar documento" HorizontalAlignment="Left" Margin="25,346,0,0" VerticalAlignment="Top" Height="60" Width="123" Click="btn_CancelarDocumentoActual_Click"   Background="Salmon"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Header="Operaciones de prueba" Grid.Column="0" Padding="15">
+                        <StackPanel>
+                            <Button x:Name="btn_CierreZ" Content="Cierre Z" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="60" Width="123" Click="btn_CierreZ_Click"/>
+                            <Button x:Name="btn_CierreX" Content="Cierre X" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="60" Width="123" Click="btn_CierreX_Click"/>
+                            <Button x:Name="btn_PruebaFTA" Content="Factura A" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="60" Width="123" Click="btn_PruebaFTA_Click"/>
+                            <Button x:Name="btn_PruebaFTB" Content="Factura B" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="60" Width="123" Click="btn_PruebaFTB_Click"  />
+                            <Button x:Name="btn_PruebaDNFH" Content="DNFH" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="60" Width="123" Click="btn_PruebaDNFH_Click" IsEnabled="False"/>
+                            <Button x:Name="btn_CancelarDocumentoActual" Content="Cancelar documento" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top" Height="60" Width="123" Click="btn_CancelarDocumentoActual_Click"   Background="Salmon"/>
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox Header="Auditoría" Grid.Column="1" Padding="15">
+                        <StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0" Margin="0,0,5,0">
+                                    <Label Content="Comprobante desde"/>
+                                    <TextBox x:Name="tbComprobanteDesde" ToolTip="Comprobante desde" Height="30"/>
+                                </StackPanel>
+                                <StackPanel Grid.Column="1" Margin="0,0,5,0">
+                                    <Label Content="Comprobante hasta"/>
+                                    <TextBox x:Name="tbComprobanteHasta" ToolTip="Comprobante hasta" Height="30"/>
+                                </StackPanel>
+                            </Grid>
+
+                            <Label Content="Tipo de comprobante"/>
+                            <ComboBox x:Name="cbTipoDocumento" ToolTip="Tipo de comprobante"/>
+                            <Border Height="20"/>
+                            <Button x:Name="btnObtenerDocumento" Content="Obtener Documento" HorizontalAlignment="Center" Margin="0,0,0,10" VerticalAlignment="Top" Click="btnObtenerDocumento_Click" Padding="10"/>
+                        </StackPanel>
+                    </GroupBox>
                 </Grid>
             </TabItem>
         </TabControl>
